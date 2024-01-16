@@ -1,17 +1,20 @@
 <script>
-import ProjectIndex from './components/pages/ProjectIndex.vue'
+
+import Header from './components/Header.vue';
+
 export default {
   components: {
-    ProjectIndex
+    Header
   }
+  
 
 }
 
 </script>
 
 <template>
-  <ProjectIndex />
-    
+ <Header />
+  <router-view></router-view>
 </template>
 
 <style lang="scss">
