@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap');
+@use './partials/variables'as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap');
 
 
 * {
@@ -8,7 +10,10 @@
 }
 
 body {
-    font-family: 'Outfit', sans-serif;
+    font-family: 'Sen', sans-serif;
+    background-color: $bg;
+    color: $white;
+
 }
 
 .container {

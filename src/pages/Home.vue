@@ -29,4 +29,12 @@
 
 <style lang="scss" scoped>
 
+@use '../../styles/partials/variables' as *;
+
+.hero {
+    background-color: $black;
+    height: 100vh;
+   padding-top: 88px;
+}
+
 </style>

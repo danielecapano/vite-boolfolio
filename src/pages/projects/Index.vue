@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="portfolio">
         <div class="container">
             <h1 class="title">I miei Progetti</h1>
         </div>
@@ -43,6 +43,10 @@ import Card from '../../components/Card.vue';
 </script>
 
 <style lang="scss" scoped>
+
+.portfolio {
+    padding-top: 3.5rem;
+}
 .grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);

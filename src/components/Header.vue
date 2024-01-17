@@ -12,8 +12,11 @@
                 <li class="menu-item">
                     <router-link :to="{ name: 'projects.index' }" class="menu-link">Portfolio</router-link>
                 </li>
+                <li class="menu-item">
+                    <router-link :to="{ name: 'projects.index' }" class="menu-link purple">Contacts</router-link>
+                </li>
             </ul>
-            <a href="#" class="contacts">Contatti</a>
+           
         </nav>
     </div>
    </header>
@@ -26,9 +29,12 @@
 </script>
 
 <style lang="scss" scoped>
+@use '../../styles/partials/variables'as *;
 
 header {
-    box-shadow: 2px 0 8px rgba($color: #000000, $alpha: 0.3);
+    position: absolute;
+    top: 0;
+    width: 100%;
 }
 
 nav {
@@ -44,14 +50,27 @@ nav {
         align-items: center;
         justify-content: center;
         list-style: none;
-        gap: 2rem;
         .menu-item {
-            text-transform: uppercase;
+            // line-height: 88px;
             .menu-link {
+                display: inline-block;
                 text-decoration: none;
+                font-size: 1rem;
+                color: $light-grey;
+                padding: 2rem 1.5rem;
+                line-height: 1.5;
+                &.purple {
+                    background-color: $purple;
+                    color: $white;
+                    font-weight: 700;
+                }
+
+
             }
         }
     }
+
+    
 }
 
 </style>

@@ -3,6 +3,7 @@
         <h3>{{ project.title }}</h3>
         <p class="type" v-if="project.type">{{ project.type.name }}</p>
         <p class="description">{{ project.description }}</p>
+        <router-link :to="{name: 'projects.show', params: {slug: project.slug}}">More info</router-link>
     </div>
 </template>
 
@@ -20,9 +21,11 @@
 
 <style lang="scss" scoped>
 
+@use '../../styles/partials/variables'as *;
+
 .project-card {
     padding: 1rem;
-    background-color: #fcfcfc;
+    background-color: $dark-grey;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
     transition: 0.25s ease-in-out;
     &:hover {
