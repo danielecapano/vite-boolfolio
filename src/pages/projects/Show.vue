@@ -1,7 +1,7 @@
 <template>
-    <!-- <div>
+    <div>
         {{project.slug}}
-    </div> -->
+    </div>
 </template>
 
 <script>

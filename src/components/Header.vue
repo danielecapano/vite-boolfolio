@@ -59,6 +59,10 @@ nav {
                 color: $light-grey;
                 padding: 2rem 1.5rem;
                 line-height: 1.5;
+                transition: 0.25s ease-in-out;
+                &:hover {
+                    color: $white;
+                }
                 &.purple {
                     background-color: $purple;
                     color: $white;

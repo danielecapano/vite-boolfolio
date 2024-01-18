@@ -11,12 +11,25 @@
 
 body {
     font-family: 'Sen', sans-serif;
-    background-color: $bg;
+    background-color: $black;
     color: $white;
 
 }
 
 .container {
-    width: min(1000px, 100%);
+    width: min(1440px, 100%);
     margin: 0 auto;
+    padding-inline: 4.5rem;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+    color: $white;
+    background-color: $purple;
+    padding: 1rem 2rem;
+    border: 2px solid $purple;
+    transition: 0.25s ease-in-out;
+
 }
